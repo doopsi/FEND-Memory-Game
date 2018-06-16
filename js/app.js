@@ -43,6 +43,19 @@ function shuffle(array) {
 }
 
 cards = shuffle(cards);
+
+for (var i = 0; i < cards.length; i++) {
+    const newLi = document.createElement('li');
+    const classCard = newLi.classList.add('card');
+    const deck = document.querySelector ('.deck');
+
+    deck.appendChild(newLi);
+
+}
+
+
+
+
 /*
  * set up the event listener for a card. If a card is clicked:
  *  - display the card's symbol (put this functionality in another function that you call from this one)
