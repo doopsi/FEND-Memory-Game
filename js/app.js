@@ -47,9 +47,14 @@ cards = shuffle(cards);
 for (var i = 0; i < cards.length; i++) {
     const newLi = document.createElement('li');
     const classCard = newLi.classList.add('card');
-    const deck = document.querySelector ('.deck');
+    const deck = document.querySelector('.deck');
+
+    const icon = document.createElement('i');
+    const classIcon = icon.classList.add('do-it-later');
+    const iconClass = document.querySelector('.card');
 
     deck.appendChild(newLi);
+    deck.appendChild(icon);
 
 }
 
