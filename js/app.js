@@ -2,22 +2,22 @@
  * Create a list that holds all of your cards
  */
 let cards = [
-    "fa fa-diamond",
-    "fa fa-diamond",
-    "fa fa-paper-plane-o",
-    "fa fa-paper-plane-o",
-    "fa fa-anchor",
-    "fa fa-anchor",
-    "fa fa-bolt",
-    "fa fa-bolt",
-    "fa fa-cube",
-    "fa fa-cube",
-    "fa fa-leaf",
-    "fa fa-leaf",
-    "fa fa-bicycle",
-    "fa fa-bicycle",
-    "fa fa-bomb",
-    "fa fa-bomb"
+    'fa fa-diamond',
+    'fa fa-diamond',
+    'fa fa-paper-plane-o',
+    'fa fa-paper-plane-o',
+    'fa fa-anchor',
+    'fa fa-anchor',
+    'fa fa-bolt',
+    'fa fa-bolt',
+    'fa fa-cube',
+    'fa fa-cube',
+    'fa fa-leaf',
+    'fa fa-leaf',
+    'fa fa-bicycle',
+    'fa fa-bicycle',
+    'fa fa-bomb',
+    'fa fa-bomb'
 ];
 
 /*
@@ -54,12 +54,8 @@ for (var i = 0; i < cards.length; i++) {
     const iconClass = document.querySelector('.card');
 
     deck.appendChild(newLi);
-    deck.appendChild(icon);
-
+    newLi.appendChild(icon);
 }
-
-
-
 
 /*
  * set up the event listener for a card. If a card is clicked:
@@ -71,3 +67,10 @@ for (var i = 0; i < cards.length; i++) {
  *    + increment the move counter and display it on the page (put this functionality in another function that you call from this one)
  *    + if all cards have matched, display a message with the final score (put this functionality in another function that you call from this one)
  */
+
+
+const showCard = document.querySelector('.card');
+
+showCard.addEventListener('click', function () {
+  console.log('The heading was clicked!');
+});
